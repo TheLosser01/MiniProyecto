@@ -25,7 +25,12 @@ val s7 = simpsom(0, 1, f7)
 
 
 
-def simpsomCompuesta(a: Int, b: Int, f: Double => Double): Double + {
-    
+def simpsomCompuesta(a: Int, b: Int, n : Int, f: Double => Double): Double = {
+    val h = (b - a) / n
+    val xj = (j : Double) => a + (j * h)
+    val ecua = (j : Double) => f (xj(2 * j - 2)) + 4 * f(xj (2 * j - 1)) + f(xj(2 * j))
+    (1 to 2).map(ecua(_))(h / 3)  
 }
 
+val sC1 = simpsomCompuesta(3, 5, 2, f1)
+val sC2 = simpsomCompuesta(0, 2, 2, f2)
