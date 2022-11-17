@@ -34,3 +34,9 @@ def simpsomCompuesta(a: Int, b: Int, n : Int, f: Double => Double): Double = {
 
 val sC1 = simpsomCompuesta(3, 5, 2, f1)
 val sC2 = simpsomCompuesta(0, 2, 2, f2)
+val sC3 = simpsomCompuesta(-1, 1, 2, f3)
+val sC4 = simpsomCompuesta(1, 2, 2, f4)
+val sC5 = simpsomCompuesta(0, 1, 2, f5)
+val sC6 = simpsomCompuesta(2, 3, 2, f6)
+val sC7 = simpsomCompuesta(0, 1, 2, f7)
+
